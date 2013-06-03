@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="CbmsMapper">
+	<!-- 非预编译  statementType="STATEMENT"   预编译（PRESTATEMENT）非预编译（STATEMENT）-->
+	<select id="list" resultType="Map" statementType="STATEMENT">
+		select * from ${database}
+	</select>		
+</mapper>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+#head{
+	height:65px;
+}
+#head .log_img .logo_img_one
+{
+	width: 283px;
+	height: 55px;
+	background: url(../img/logo.png) no-repeat;;
+}
+#head .log_img .logo_img_two{
+	width:201px; 
+	height:31px; 
+	background: url(../img/slogan.png) no-repeat;
+}
+#header .logo_img_one:hover {
+    background-position: 0 -86px;
+}
+
+.login_btn a {
+	padding-left: 18px;
+	line-height: 16px;
+	background: url(../img/head/oauth_icons.png) no-repeat;
+}
+
+.head_qq_log {
+	background: url(../img/head/oauth_icons.png) no-repeat 0 -40px;
+}
+
+.head_wb_log {
+	background: url(../img/head/oauth_icons.png) no-repeat 0 -20px;
+}
+.register {background: none;}

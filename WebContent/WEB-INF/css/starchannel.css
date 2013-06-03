@@ -1,0 +1,740 @@
+﻿.watch,.cwatch {
+    border:none;
+	display:inline-block;
+    background-position: 0 -1021px;
+    _background:none;
+    _background-color:transparent;
+	cursor:pointer;
+	overflow:hidden;
+	color:#333;
+}
+.watch b,.cwatch b {
+	float:left;
+	height:16px;
+	margin-left:10px;
+	font-weight:normal;
+    _background:none;
+    _background-color: transparent;
+    _padding: 5px 11px 3px 0px;
+	background-position: right -398px;
+	font: 12px Arial,Helvetica,sans-serif;
+}
+.watch i,.cwatch i {
+	float:left;
+	vertical-align:middle;
+    margin-right:5px;
+}
+.watch b span,.cwatch b span {
+	line-height:16px;
+	_line-height:18px;
+}
+.watch:hover { _background:none;_background-color: transparent; }
+.watch:hover b {  _background:none;_background-color: transparent; }
+.watch:active { _background:none; _background-color: transparent;}
+.watch:active b { _background:none;_background-color: transparent; }
+.watch:hover .ico-follow { background-position: 0 -599px; }
+.watch b::selection { color:#F39;}
+
+.starbanner {
+	width: 990px;	
+	height: 100px;
+	margin: 10px auto;
+}
+.container {
+	position: relative;
+	width: 930px;
+	margin: 10px auto;
+	padding: 29px;
+	/*border: 1px solid #d4d4d4;*/
+	background: #fefefe;
+}
+.container div.logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 103px;
+	height: 112px;
+	z-index: 1;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/topeditor.png) no-repeat;
+}
+.container .btn:hover span,
+.container .watch:hover span,
+.container .cwatch:hover span {
+	color: #F39;
+}
+.container .followed {
+	color: #999999;
+}
+.container .graybg {
+	padding: 26px;
+	border-radius: 10px;
+	background: #f0f0f0;
+}
+.container div.graybg .cover {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+    background: transparent/6;
+    background: url(http://s.xnimg.cn/mall/starchannel/img/filterbg.png)\9;
+}
+.container div.graybg .cover .name a.title {
+	color: #ccc;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.container div.graybg .cover .name a.title:hover {
+	color: #ff3399;
+}
+.container div.graybg .cover .name b.watch span {
+	color: #ccc;
+}
+.container div.graybg .cover .name b.watch:hover span {
+	color: #FF3399;
+}
+.container div.graybg .name{
+	position: relative;
+	height: 17px;
+	margin-bottom: 9px;
+	_margin-bottom:4px;
+}
+.container div.graybg .watch,
+.container div.graybg .cwatch {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	_top: -4px;
+}
+.container div.graybg .cwatch {
+	color: #ccc;
+	_margin: 0;
+	_padding: 0;
+	_width: 100px;
+	_right: -15px;
+}
+.container div.graybg .name .title {
+	font-size: 14px;
+	font-weight: 600;
+	color: #333333;
+	float: left;
+	display: block;
+}
+.container div.graybg .name .title:hover {
+	color: #F39;
+}
+.container div.graybg b{
+	display: block;
+	height: 18px;
+	font-weight: 500;
+	margin-bottom: 7px;
+}
+.container div.graybg .frgt{
+	float: right;
+}
+.container div.graybg .nmrt{
+	margin-right: 0 !important;
+}
+
+/* 权威编辑 */
+.topedit {
+	position: relative;
+	padding-bottom: 18px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/split1.png) left bottom no-repeat;
+}
+.topedit div.center {
+	position: relative;
+	float: left;
+	width: 708px;
+	height: 342px;
+}
+.topedit div.center img {
+	border: 0;
+	width: 708px;
+	height: 342px;
+	z-index: -1;
+}
+.topedit div.center .btn {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+.topedit div.split {
+	float: left;
+}
+.topedit div.right {
+	float: left;
+	padding-left: 45px;
+	width: 175px;
+	height: 363px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/split2.png) left bottom no-repeat;
+}
+.topedit div.right .title {
+	margin-bottom: 10px;
+	color: #666666;
+	font-size: 16px;
+	font-family: '微软雅黑';
+}
+.topedit div.right .item {
+	width: 175px;
+	margin-bottom: 16px;
+}
+.topedit div.right .item .imgbox {
+	position: relative;
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-top: 4px;
+	overflow: hidden;
+}
+.topedit div.right .item .imgbox a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+}
+.topedit div.right .item .imgbox .num {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 21px;
+	height: 18px;
+	color: #ffffff;
+	font-family: Tahoma;
+	font-weight: bold;
+	line-height: 15px;
+	padding-left: 5px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/circlebg.png) no-repeat;
+}
+.topedit div.right .item .info {
+	float: left;
+	width: 100px;
+	height: 65px;
+	margin-left: 10px;
+}
+.topedit div.right .item .info .name {
+	font-weight: bold;
+	line-height: 18px;
+}
+.topedit div.right .item .info .count {
+	color: #999999;
+	line-height: 18px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.topedit div.right .item .info .count a {
+	color: #ff65ad;
+}
+.topedit .imgfront {
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 2;
+	zoom: 1;
+	border: 0;
+	background: #ffffff\9;
+	filter: alpha(opacity=0)\9;
+}
+.topedit .imgfront1 { top: 7px; left: 13px; width: 202px; height: 324px; }
+/**
+.topedit .imgfront1 { top: 19px; left: 36px; width: 205px; height: 300px; }
+.topedit .imgfront2 { top: 191px; left: 304px; width: 81px; height: 103px; }
+.topedit .imgfront3 { top: 213px; left: 402px; width: 80px; height: 103px; }
+.topedit .imgfront4 { top: 191px; left: 498px; width: 81px; height: 103px; }
+.topedit .imgfront5 { top: 214px; left: 596px; width: 80px; height: 103px; }
+**/
+
+/* 明星达人 */
+.stars {
+}
+.stars div.title {
+	height: 34px;
+	margin-bottom: 8px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/stars.png) no-repeat;
+}
+.stars div.graybg .lf{
+	position: relative;
+	float: left;
+	width:246px;
+	height: 331px;
+	border-bottom: 1px solid #DEDEDE;
+	_height: 348px;
+}
+.stars div.graybg .lf .bigimg {
+	display: block;
+	width: 242px;
+	height: 296px;
+	overflow: hidden;
+	border: 2px solid #FFF;
+}
+.stars div.graybg .cover{
+	height: 57px;
+	width:212px;
+	padding: 15px;
+    top:211px;
+    left:2px;
+}
+.stars div.graybg .cover p{
+	height: 30px;
+    color: #ccc;
+}
+.stars div.graybg .resttime{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #999;
+	margin: 8px 75px;
+	width:90px;
+	height: 15px;
+	padding-left: 20px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/icon-clock.png) left center no-repeat;
+}
+.stars div.graybg .rt{
+	float: left;
+	width:630px;
+}
+.stars div.graybg ul{
+	list-style-type: none;
+	_margin-left:-12px;
+}
+.stars div.graybg ul li{
+	margin: 0 0 12px 12px;
+	padding: 16px;
+	float: left;
+	background-color: #fff; 
+	_margin-left:11px;
+}
+.stars div.graybg .photo{
+	float: left;
+	width:100px;
+	height: 127px;
+	overflow: hidden;
+	border-bottom: 1px solid #DEDEDE;
+}
+.stars div.graybg .photo a {
+	display: block;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+.stars div.graybg .rest{
+	color: #b8b8b8;
+	margin: 6px 12px;
+	padding-left: 15px;
+	width:100px;
+	height: 15px;
+	line-height: 16px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/icon-clock.png) left center no-repeat;
+}
+.stars div.graybg .cont{
+	float: left;
+	margin-left: 10px;
+	width:160px;
+	color: #999;
+	overflow: hidden;
+}
+.stars div.graybg b {
+	white-space: nowrap;
+	overflow: hidden;
+}
+.stars div.graybg b span.color{
+	display: inline;
+	color:#8ab22e;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.stars div.graybg p{
+	width:100%;
+	height: 45px;
+	line-height: 15px;
+	color: #666;
+	overflow: hidden;
+}
+
+/* 时尚达人 */
+.fashion {
+	margin-top: 10px;
+}
+.fashion div.title {
+	height: 34px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/fashion.png) no-repeat;
+}
+.fashion div.graybg {
+	position: relative;
+	height: 430px;
+}
+.fashion div.graybg .half{
+	float: left;
+}
+.fashion div.graybg .up-1{
+	float: left;
+	margin-right: 39px;
+	_width:418px;
+}
+.fashion div.graybg .up-2{
+	float: right;
+	_width:418px;
+}
+.fashion div.graybg .person{
+	position: relative;
+	float: left;
+}
+.fashion div.graybg .person .bigimg{
+	display: block;
+	width: 186px;
+	height: 260px;
+	border: 2px solid #fff;
+	overflow: hidden;
+}
+.fashion div.graybg .cover{
+	height: 16px;
+	width:164px;
+	padding: 12px 11px;
+	_padding-bottom: 0;
+    top:222px;
+    left:2px;
+}
+.fashion div.graybg .photo{
+	float: left;
+	width:228px;
+	_width:228px;
+	_margin-left: -3px;
+}
+.fashion div.graybg .photo .smallimg {
+	float: left;
+	margin: 0 0 12px 12px;
+	_margin-left: 6;
+	width: 98px;
+	height: 122px;
+	overflow: hidden;
+	border: 2px solid #fff;
+}
+.fashion div.graybg .center{
+	position: relative;
+	width:421px;
+	height: 4px;
+	background-color: #DEDEDE;
+	margin-left: -5px;
+	margin-top: 10px;
+	_margin-top:20px;
+	_width:418px;
+}
+.fashion div.graybg .abslt{
+	position: absolute;
+	left: 5px;
+	border: 4px none none;
+	border-top: solid #FC1D7F; 
+	color: #FC1D7F;
+	font-weight: 600;
+}
+.fashion div.graybg .halfdown-1 {
+	position: absolute;
+	left: 27px;
+	bottom: 25px;
+	_width:418px;
+}
+.fashion div.graybg .halfdown-2 {
+	position: absolute;
+	right: 6px;
+	bottom: 25px;
+	_right: -6px;
+	_width:418px;
+}
+.fashion div.graybg .down{
+	margin-top: 30px;
+	width: 440px;
+}
+.fashion div.graybg .picture{
+	float: left;
+	margin-right: 19px;
+	text-align: center;
+	width:90px;
+	color: #333;
+	_margin-right:18px;
+}
+.fashion div.graybg .lastpic {
+	margin-right: 0;
+}
+.fashion div.graybg .picture .smallerimg{
+	display: block;
+	margin-top: 5px;
+	width: 86px;
+	height: 86px;
+	overflow: hidden;
+	border: 2px solid #fff;
+}
+/* 专辑达人 */
+.editor {
+	margin-top: 10px;
+}
+.editor div.split-line {
+	margin: 8px 0;
+	height: 2px;
+}
+.editor div.title {
+	height: 34px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/editor.png) no-repeat;
+}
+.editor div.graybg .left{
+	float: left;
+}
+.editor div.graybg .picture{
+	float: left;
+	width: 190px;
+	height:264px;
+	margin-right: 20px;
+}
+.editor div.graybg .picture .bigimg {
+	display: block;
+	width: 186px;
+	height: 260px;
+	overflow: hidden;
+	border: 2px solid #fff;
+}
+.editor div.graybg .cont{
+	float: left;
+	width:370px;
+}
+.editor div.graybg .cont .smallimg {
+	float: left;
+	display: block;
+	margin-right: 8px;
+	width: 80px;
+	height: 104px;
+	overflow: hidden;
+	border: 2px solid #fff;
+}
+.editor div.graybg .cont .smallerimg {
+	display: block;
+	width: 86px;
+	height: 86px;
+	overflow: hidden;
+}
+.editor div.graybg .cont .name{
+	border-bottom: 1px dashed #DEDEDE;
+	line-height: 30px;
+	height: 36px;
+	
+}
+.editor div.graybg .cont .third h3 {
+	margin-bottom: 5px;
+}
+.editor div.graybg h3{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #8ab22e;
+	font-weight: 500;
+}
+.editor div.graybg ul{
+	width:360px;
+	height: 57px;
+	color: #9D9D9D;
+}
+.editor div.graybg li{
+	background: url(http://s.xnimg.cn/mall/starchannel/img/lisquare.jpg) no-repeat;
+	list-style-type: none;
+	float: left;
+	width:165px;
+	margin-top: 3px;
+	padding-left: 15px;
+	color: #3c3c3c;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.editor div.graybg .third img{
+	float: left;
+	margin-right: 10px;
+}
+.editor div.graybg .right{
+	position: relative;
+	float: left;
+	width:278px;
+	background-color: #fff;
+	height: 264px;
+	margin-left: 20px;
+	_width: 270px;
+}
+.editor div.graybg .tip{
+	position: relative;
+	left: -1px;
+	width:100%;
+	height: 38px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/editorred.png) bottom left no-repeat;
+}
+.editor div.graybg .edfont{
+	float: left;
+	margin-left: 14px;
+	width:80px;
+	height: 29px;
+	background:  url(http://s.xnimg.cn/mall/starchannel/img/editorfont.png) bottom left no-repeat;
+	_margin-left:7px;
+}
+.editor div.graybg .more{
+	float: right;
+	color: #3c3c3c;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-right: 15px;
+	_margin-right: 3px;
+}
+.editor div.graybg .item{
+	margin:10px 20px 30px 16px;
+	_margin-top: 10px;
+	_margin-bottom: 0;
+}
+.editor div.graybg .photo{
+	float: left;
+	width:86px;
+	height: 86px;
+	overflow: hidden;
+}
+.editor div.graybg .rtcont{
+	float: left;
+	margin-left: 13px;
+	width: 143px;
+	_width: 135px;
+}
+.editor div.graybg .rtcont .name{
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #F0F0F0;
+	margin-bottom: 8px;
+}
+.editor div.graybg .rtcont .name a.title{
+	color: #89B130;
+}
+.editor div.graybg .rtcont .name a.title:hover {
+	color: #ff3399;
+}
+.editor div.graybg .rtcont .name .watch {
+	position: absolute;
+	top: 0;
+	right: 0;
+	_top: -5px;
+	_right: -15px;
+}
+.editor div.graybg .rtcont .context {
+	height: 50px;
+	line-height: 16px;
+	color: #999;
+	word-wrap: break-word;
+}
+.editor div.graybg .line{
+	border:0px solid #F8F8F8;
+	border-top-width: 1px;
+	margin: 25px 0;
+	width:100%;
+	height: 0px;
+	line-height: 0;
+}
+
+/* 逛街达人墙 */
+.wall {
+	margin-top: 10px;
+}
+.wall div.title {
+	height: 34px;
+	margin-bottom: 8px;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/jwall.png) no-repeat;
+}
+.wall div.gray .front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	width: 96px;
+	height: 96px;
+	background: #f0f0f0;
+	opacity: 0.45;
+	filter: alpha(opacity=45);
+}
+.wall div.graybg {
+	position: relative;
+	height: 434px;
+}
+.wall div.graybg a {
+	position: absolute;
+	display: block;
+	padding: 8px 7px;
+	width: 96px;
+	height: 96px;
+	overflow: hidden;
+	border: 1px solid #ffffff;
+}
+.wall div.graybg .imgbox {
+	width: 96px;
+	height: 96px;
+	overflow: hidden;
+}
+.wall div.graybg .imgbox img {
+	border: 0;
+}
+.wall div.graybg .pic .name {
+	position: absolute;
+	display: none;
+	left: 7px;
+	bottom: -1px;
+	width: 96px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.6);
+	background: transparent/6;
+	background: url(http://s.xnimg.cn/mall/starchannel/img/filterbg.png)\9;
+	_bottom: 4px;
+}
+.wall div.graybg .first  { top: 26px;  left: 26px;  border-top: 0; border-left: 0; padding-top: 0; padding-left: 0; width: 208px; height: 96px; }
+.wall div.graybg .end    { top: 357px; left: 684px; width: 208px; height: 96px; border: 0; padding-right: 0; padding-bottom: 0; }
+.wall div.graybg .pic-1  { top: 26px;  left: 242px; border-top: 0; border-left: 0; padding-top: 0; }
+.wall div.graybg .pic-2  { top: 26px;  left: 353px; border-top: 0; border-left: 0; padding-top: 0; }
+.wall div.graybg .pic-3  { top: 26px;  left: 464px; border-top: 0; border-left: 0; padding-top: 0; }
+.wall div.graybg .pic-4  { top: 26px;  left: 575px; border-top: 0; border-left: 0; padding-top: 0; }
+.wall div.graybg .pic-5  { top: 26px;  left: 686px; border: 0; padding: 0 0 9px 6px; width: 208px; height: 208px; }
+.wall div.graybg .pic-6  { top: 131px; left: 27px;  border-top: 0; border-left: 0; padding-left: 0; }
+.wall div.graybg .pic-7  { top: 131px; left: 131px; border-top: 0; border-left: 0; }
+.wall div.graybg .pic-8  { top: 131px; left: 242px; border-top: 0; border-left: 0; padding-right: 6px; padding-bottom: 9px; width: 208px; height: 208px; }
+.wall div.graybg .pic-9  { top: 131px; left: 464px; border-top: 0; border-left: 0; }
+.wall div.graybg .pic-10 { top: 131px; left: 575px; border-top: 0; border-left: 0; }
+.wall div.graybg .pic-11 { top: 244px; left: 27px;  border-top: 0; border-left: 0; padding-left: 0; }
+.wall div.graybg .pic-12 { top: 244px; left: 131px; border-top: 0; border-left: 0; }
+.wall div.graybg .pic-13 { top: 244px; left: 464px; border-top: 0; border-left: 0; }
+.wall div.graybg .pic-14 { top: 244px; left: 575px; border-top: 0; border-left: 0; }
+.wall div.graybg .pic-15 { top: 243px; left: 686px; border-left: 0; }
+.wall div.graybg .pic-16 { top: 243px; left: 797px; border-right: 0; border-left: 0; padding-right: 0; }
+.wall div.graybg .pic-17 { top: 357px; left: 27px;  border-top: 0; border-left: 0; border-bottom: 0; padding-left: 0; padding-bottom: 0; }
+.wall div.graybg .pic-18 { top: 357px; left: 131px;  border-top: 0; border-left: 0; border-bottom: 0; padding-bottom: 0; }
+.wall div.graybg .pic-19 { top: 357px; left: 242px;  border-top: 0; border-left: 0; border-bottom: 0; padding-bottom: 0; }
+.wall div.graybg .pic-20 { top: 357px; left: 353px;  border-top: 0; border-left: 0; border-bottom: 0; padding-bottom: 0; }
+.wall div.graybg .pic-21 { top: 357px; left: 464px;  border-top: 0; border-left: 0; border-bottom: 0; padding-bottom: 0; }
+.wall div.graybg .pic-22 { top: 357px; left: 575px;  border-top: 0; border-left: 0; border-bottom: 0; padding-bottom: 0; }
+.wall div.graybg .pic-5 .imgbox,
+.wall div.graybg .pic-8 .imgbox {
+	width: 208px; 
+	height: 208px;
+}
+.wall div.graybg .pic-5  .name { 
+	width: 209px;
+	left: 6px;
+	_bottom: 4px;
+}
+.wall div.graybg .pic-6  .name,
+.wall div.graybg .pic-11 .name { 
+	left: 0; 
+}
+.wall div.graybg .pic-8  .name { 
+	width: 208px;
+	_bottom: 4px;
+}
+.wall div.graybg .pic-17 .name { 
+	left: 0; 
+	bottom: -9px; 
+	_bottom: -4px;
+}
+.wall div.graybg .pic-18 .name,
+.wall div.graybg .pic-19 .name,
+.wall div.graybg .pic-20 .name,
+.wall div.graybg .pic-21 .name,
+.wall div.graybg .pic-22 .name { 
+	bottom: -9px; 
+	_bottom: -4px;
+}

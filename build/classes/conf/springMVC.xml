@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+						http://www.springframework.org/schema/mvc 
+						 http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+
+	<!-- 自动扫描的包名，多个包可以用逗号隔开 -->
+	<context:component-scan base-package="com.ld">
+		<!-- 在 SpringMVC 配置中将 Service 的注解打消掉 -->
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+	</context:component-scan>
+	
+	
+	<!-- shiro -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+		depends-on="lifecycleBeanPostProcessor" />
+	<bean
+		class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager" />
+	</bean>
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="org.apache.shiro.authz.UnauthorizedException">
+					/unauthorized
+			</prop>
+				<prop key="org.apache.shiro.authz.UnauthenticatedException">
+					/unauthenticated
+			</prop>
+			</props>
+		</property>
+	</bean>
+	
+	
+
+	<mvc:annotation-driven />
+	
+	
+	<!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
+	<bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>text/html;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+	
+	
+
+	<!-- 视图解析类 -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+	</bean>
+	
+	<mvc:view-controller path="/" view-name="forward:/index" />
+	<!-- 当在web.xml 中 DispatcherServlet使用 <url-pattern>/</url-pattern> 映射时，能映射静态资源 -->
+	<mvc:default-servlet-handler />
+	<!-- 静态资源映射 -->
+	<mvc:resources mapping="/img/**" location="/WEB-INF/img/" />
+	<mvc:resources mapping="/css/**" location="/WEB-INF/css/" />
+	<mvc:resources mapping="/js/**" location="/WEB-INF/js/" />
+	
+	
+	
+	<!-- 文件上传相关 -->
+	<!-- <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" /> -->
+
+	<!-- 控制器异常处理 <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver"> 
+		<property name="exceptionMappings"> <props> <prop key="java.lang.Exception">errors/errorException</prop> 
+		</props> </property> </bean> -->
+</beans>
